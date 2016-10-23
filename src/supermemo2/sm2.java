@@ -54,7 +54,10 @@ public class sm2 {
         notMemorised++;
     }
 
-    public void calcIntervalEF(int grade) {
+    // currentCard should be named card, and
+    // nextDate should be called overDueDate and should be changed from int to time
+    // in final product
+    public void calcIntervalEF(int grade /*,Card card*/) {
 
         // SM-2:
         // EF (easiness factor) is a rating for how difficult the card is.

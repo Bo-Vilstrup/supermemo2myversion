@@ -22,7 +22,7 @@ public class SuperMemo2 {
                 quiz.getQuestions().getUsersAnswer();
                 quiz.gradYouAnswer();
                 
-                quiz.cardsToString();
+                quiz.cardsToString(); // for debugging
             
             } while (quiz.isFinishedForToDay());
             
