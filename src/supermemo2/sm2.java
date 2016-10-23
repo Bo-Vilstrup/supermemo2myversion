@@ -133,7 +133,7 @@ public class sm2 {
                 return this;
             }
             // Get cards with a wrong ansaw 
-            if (cards.get(i).overDueDate <= 0 && cards.get(i).grad < 3) { // 3 or 4
+            if (cards.get(i).overDueDate <= 0 && cards.get(i).grad < 4) { // 3 or 4
 
                 currentCard = cards.get(i);
                 System.out.println(currentCard.Q);
@@ -174,10 +174,10 @@ public class sm2 {
             currentCard.grad = grad;
             calcIntervalEF(grad);
             
-            if (2 < grad) {
+            if (3 < grad) { // se line 136 have to match this line 
                 //currentCard.overDueDate = 1;
-                currentCard.grad = grad;
-                calcIntervalEF(grad);
+//                currentCard.grad = grad;
+//                calcIntervalEF(grad);
                 notMemorised--;
             }
         } else {
